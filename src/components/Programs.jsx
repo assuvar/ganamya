@@ -5,6 +5,7 @@ import CourseModal from './CourseModal';
 const Programs = () => {
     const [selectedProgram, setSelectedProgram] = useState(null);
     const [filter, setFilter] = useState('All');
+    const [visibleCount, setVisibleCount] = useState(8);
 
     const programs = [
         {
@@ -257,9 +258,24 @@ const Programs = () => {
 
     const filteredPrograms = filter === 'All' ? programs : programs.filter(p => p.level === filter);
 
+    const handleShowMore = () => {
+        setVisibleCount(prev => prev + 8);
+    };
+
+    const handleShowLess = () => {
+        setVisibleCount(8);
+        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    // Reset visible count when filter changes
+    const handleFilterChange = (level) => {
+        setFilter(level);
+        setVisibleCount(8);
+    };
+
     return (
         <>
-            <section id="courses" className="py-20 bg-gray-50 overflow-hidden">
+            <section id="courses" className="py-20 bg-gray-50">
                 <div className="max-w-screen-2xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-10">
                         <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Our Programs</span>
@@ -286,7 +302,7 @@ const Programs = () => {
                         {['All', 'Beginner', 'Intermediate', 'Advanced', 'All Levels'].map(level => (
                             <button
                                 key={level}
-                                onClick={() => setFilter(level)}
+                                onClick={() => handleFilterChange(level)}
                                 className={`px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${filter === level ? 'bg-brand-green text-white shadow-md shadow-brand-green/30 scale-105' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 hover:scale-105'}`}
                             >
                                 {level === 'All' ? 'All Programs' : level}
@@ -295,7 +311,7 @@ const Programs = () => {
                     </div>
 
                     <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 transition-all">
-                        {filteredPrograms.map((program, index) => (
+                        {filteredPrograms.slice(0, visibleCount).map((program, index) => (
                             <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col group">
                                 <div className="relative overflow-hidden shrink-0">
                                     <img src={program.image} className="h-44 w-full object-cover group-hover:scale-105 transition duration-500" alt={program.title} />
@@ -316,6 +332,28 @@ const Programs = () => {
                             </div>
                         ))}
                     </div>
+
+                    {/* Pagination Buttons */}
+                    {filteredPrograms.length > 8 && (
+                        <div className="mt-12 mb-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                            {visibleCount < filteredPrograms.length && (
+                                <button
+                                    onClick={handleShowMore}
+                                    className="bg-brand-green text-white px-8 py-3 rounded-xl font-bold hover:bg-green-700 transition shadow-md w-full sm:w-auto"
+                                >
+                                    Load More Courses
+                                </button>
+                            )}
+                            {visibleCount > 8 && (
+                                <button
+                                    onClick={handleShowLess}
+                                    className="bg-white text-gray-600 border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition shadow-sm w-full sm:w-auto"
+                                >
+                                    Show Less
+                                </button>
+                            )}
+                        </div>
+                    )}
                 </div>
             </section>
 

@@ -1,9 +1,12 @@
-import React from 'react';
-import { Phone } from 'lucide-react';
+import React, { useState } from 'react';
+import { Phone, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Team = () => {
+    const [showFullAyyanna, setShowFullAyyanna] = useState(false);
+    const [showFullVaishnavi, setShowFullVaishnavi] = useState(false);
+
     return (
-        <section id="team" className="py-24 bg-white overflow-hidden">
+        <section id="team" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-8">
                 <div className="text-center mb-16">
                     <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Our Leadership</span>
@@ -31,21 +34,35 @@ const Team = () => {
                                 <p>
                                     Ayyanna Allura is the Founder and Director of Gnanamaya Edutech, an emerging learning platform dedicated to bridging the gap between academic education and real-world industry skills. With a strong combination of business knowledge and technological expertise, he leads the organization with a clear mission — to make students career-ready through practical, modern learning.
                                 </p>
-                                <p>
-                                    He holds an MBA in Finance and Business Analytics, which provided him with deep understanding of financial systems, data-driven decision making, and organizational management. To strengthen his technical foundation, he also completed a Master Diploma in Code Programming, gaining hands-on skills in software development and problem solving.
-                                </p>
-                                <p>
-                                    Ayyanna brings valuable professional experience from the IT industry, having worked with global organizations including Oracle and Broadridge. During his tenure, he was exposed to enterprise applications, data operations, and corporate workflows, helping him understand the exact technical and professional expectations of the industry.
-                                </p>
-                                <p>
-                                    Motivated by a passion for teaching and student development, he founded Gnanamaya Edutech with the vision of transforming traditional education into skill-based education. His training methodology focuses on practical sessions, real-time projects, and industry-oriented learning rather than theory-only teaching.
-                                </p>
-                                <p>
-                                    He actively promotes learning in Artificial Intelligence, Data Analytics, and modern technologies, preparing students to adapt to the rapidly evolving digital world. Under his leadership, Gnanamaya Edutech continues to guide learners from classroom knowledge to successful professional careers.
-                                </p>
-                                <p className="font-semibold text-gray-800 border-l-4 border-brand-green pl-4 italic">
-                                    "Education should not only provide degrees but should also build confidence, competence, and employability for every student."
-                                </p>
+
+                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullAyyanna ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <p>
+                                        He holds an MBA in Finance and Business Analytics, which provided him with deep understanding of financial systems, data-driven decision making, and organizational management. To strengthen his technical foundation, he also completed a Master Diploma in Code Programming, gaining hands-on skills in software development and problem solving.
+                                    </p>
+                                    <p>
+                                        Ayyanna brings valuable professional experience from the IT industry, having worked with global organizations including Oracle and Broadridge. During his tenure, he was exposed to enterprise applications, data operations, and corporate workflows, helping him understand the exact technical and professional expectations of the industry.
+                                    </p>
+                                    <p>
+                                        Motivated by a passion for teaching and student development, he founded Gnanamaya Edutech with the vision of transforming traditional education into skill-based education. His training methodology focuses on practical sessions, real-time projects, and industry-oriented learning rather than theory-only teaching.
+                                    </p>
+                                    <p>
+                                        He actively promotes learning in Artificial Intelligence, Data Analytics, and modern technologies, preparing students to adapt to the rapidly evolving digital world. Under his leadership, Gnanamaya Edutech continues to guide learners from classroom knowledge to successful professional careers.
+                                    </p>
+                                    <p className="font-semibold text-gray-800 border-l-4 border-brand-green pl-4 italic mt-6">
+                                        "Education should not only provide degrees but should also build confidence, competence, and employability for every student."
+                                    </p>
+                                </div>
+
+                                <button
+                                    onClick={() => setShowFullAyyanna(!showFullAyyanna)}
+                                    className="relative z-10 text-brand-green font-bold flex items-center gap-1 hover:text-green-700 transition mt-4 pt-2 w-max"
+                                >
+                                    {showFullAyyanna ? (
+                                        <>Read Less <ChevronUp className="w-5 h-5" /></>
+                                    ) : (
+                                        <>Read More <ChevronDown className="w-5 h-5" /></>
+                                    )}
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -70,15 +87,29 @@ const Team = () => {
                                 <p>
                                     Vaishnavi Reddy G K is the Co-Founder of Gnanamaya Edutech and plays a key role in shaping the academic vision and training excellence of the organization. With a strong passion for teaching and mentoring, she is dedicated to empowering students through structured learning and practical knowledge.
                                 </p>
-                                <p>
-                                    She holds an MBA in Finance and Business Analytics, which has provided her with deep expertise in financial management, data interpretation, and strategic decision-making. Her specialization in Business Analytics enables her to guide students in understanding data-driven approaches and applying analytical thinking in real-world business scenarios.
-                                </p>
-                                <p>
-                                    Vaishnavi is highly inclined toward teaching and student development. She believes in building strong conceptual foundations and ensuring that learners gain clarity, confidence, and competence. Her teaching methodology focuses on interactive sessions, practical examples, and personalized mentoring to help students grow academically and professionally.
-                                </p>
-                                <p>
-                                    At Gnanamaya Edutech, she actively contributes to curriculum planning, academic mentoring, and quality training delivery. Her mission is to create a positive learning environment where students not only acquire technical skills but also develop confidence and career readiness. Through her dedication and commitment, she continues to inspire learners and support them in achieving their professional goals.
-                                </p>
+
+                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullVaishnavi ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <p>
+                                        She holds an MBA in Finance and Business Analytics, which has provided her with deep expertise in financial management, data interpretation, and strategic decision-making. Her specialization in Business Analytics enables her to guide students in understanding data-driven approaches and applying analytical thinking in real-world business scenarios.
+                                    </p>
+                                    <p>
+                                        Vaishnavi is highly inclined toward teaching and student development. She believes in building strong conceptual foundations and ensuring that learners gain clarity, confidence, and competence. Her teaching methodology focuses on interactive sessions, practical examples, and personalized mentoring to help students grow academically and professionally.
+                                    </p>
+                                    <p>
+                                        At Gnanamaya Edutech, she actively contributes to curriculum planning, academic mentoring, and quality training delivery. Her mission is to create a positive learning environment where students not only acquire technical skills but also develop confidence and career readiness. Through her dedication and commitment, she continues to inspire learners and support them in achieving their professional goals.
+                                    </p>
+                                </div>
+
+                                <button
+                                    onClick={() => setShowFullVaishnavi(!showFullVaishnavi)}
+                                    className="relative z-10 text-brand-green font-bold flex items-center gap-1 hover:text-green-700 transition mt-4 pt-2 lg:justify-end w-full"
+                                >
+                                    {showFullVaishnavi ? (
+                                        <>Read Less <ChevronUp className="w-5 h-5" /></>
+                                    ) : (
+                                        <>Read More <ChevronDown className="w-5 h-5" /></>
+                                    )}
+                                </button>
                             </div>
                         </div>
                     </div>
