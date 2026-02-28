@@ -1,41 +1,48 @@
 import React, { useState } from 'react';
-import { Phone, ChevronDown, ChevronUp } from 'lucide-react';
+import { Phone, ChevronDown, ChevronUp, ShieldCheck, Rocket, Award, Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
     const [showFullAyyanna, setShowFullAyyanna] = useState(false);
     const [showFullVaishnavi, setShowFullVaishnavi] = useState(false);
 
     return (
-        <section id="team" className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-8">
+        <section id="team" className="py-24 bg-[#f8f9fa]">
+            <div className="max-w-6xl mx-auto px-8">
                 <div className="text-center mb-16">
-                    <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Our Leadership</span>
-                    <h2 className="text-3xl font-bold mt-2">Visionaries Behind Gnanamaya</h2>
+                    <h2 className="text-4xl font-extrabold text-gray-900 font-serif tracking-wide">
+                        Meet Our <span className="text-blue-500">Leadership Team</span>
+                    </h2>
+                    <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+                        Industry veterans committed to transforming technical education and empowering the next generation of skilled professionals.
+                    </p>
+
+                    <div className="flex justify-center flex-wrap gap-3 mt-8 text-xs font-bold uppercase tracking-widest">
+                        <span className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-2.5 rounded-xl shadow-md"><ShieldCheck className="w-5 h-5" /> MSME Registered</span>
+                        <span className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-5 py-2.5 rounded-xl shadow-md"><Rocket className="w-5 h-5" /> Startup India</span>
+                        <span className="flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-5 py-2.5 rounded-xl shadow-md"><Award className="w-5 h-5" /> Industry Certified</span>
+                    </div>
                 </div>
 
-                <div className="space-y-20">
-                    {/* Founder */}
-                    <div className="flex flex-col lg:flex-row gap-12 items-start bg-gray-50 rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-sm relative group">
-                        <div className="w-full lg:w-72 shrink-0">
-                            <div className="w-48 h-48 lg:w-full lg:h-72 mx-auto rounded-3xl border-8 border-white shadow-xl overflow-hidden group-hover:-translate-y-2 transition duration-500">
-                                <img src="/ayyanna.jpg" className="w-full h-full object-cover object-top" alt="Ayyanna Allura" />
-                            </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    {/* Founder Card */}
+                    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group">
+                        <div className="h-96 w-full overflow-hidden bg-gray-50 flex items-center justify-center">
+                            <img
+                                src="/ayyanna.jpg"
+                                className="w-full h-full object-contain group-hover:scale-105 transition duration-500"
+                                alt="Ayyanna Allura"
+                            />
                         </div>
-                        <div className="flex-1">
-                            <h3 className="text-3xl font-bold text-gray-900">Ayyanna Allura</h3>
-                            <p className="text-brand-green font-bold uppercase tracking-wider text-sm mt-2 flex items-center gap-3">
-                                Founder & Managing Director
-                                <span className="flex items-center gap-1.5 text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm border border-gray-100 normal-case tracking-normal">
-                                    <Phone className="w-3.5 h-3.5 text-brand-green" /> +91 8722282131
-                                </span>
-                            </p>
+                        <div className="p-8 flex-1 flex flex-col">
+                            <h3 className="text-2xl font-bold text-gray-900 font-serif">Ayyanna Allura</h3>
+                            <p className="text-blue-500 font-medium mt-1 mb-4">Founder & Managing Director</p>
 
-                            <div className="mt-6 space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
+                            <div className="text-gray-600 text-sm leading-relaxed flex-1">
                                 <p>
                                     Ayyanna Allura is the Founder and Director of Gnanamaya Edutech, an emerging learning platform dedicated to bridging the gap between academic education and real-world industry skills. With a strong combination of business knowledge and technological expertise, he leads the organization with a clear mission — to make students career-ready through practical, modern learning.
                                 </p>
 
-                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullAyyanna ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullAyyanna ? 'max-h-[1000px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                                     <p>
                                         He holds an MBA in Finance and Business Analytics, which provided him with deep understanding of financial systems, data-driven decision making, and organizational management. To strengthen his technical foundation, he also completed a Master Diploma in Code Programming, gaining hands-on skills in software development and problem solving.
                                     </p>
@@ -48,47 +55,53 @@ const Team = () => {
                                     <p>
                                         He actively promotes learning in Artificial Intelligence, Data Analytics, and modern technologies, preparing students to adapt to the rapidly evolving digital world. Under his leadership, Gnanamaya Edutech continues to guide learners from classroom knowledge to successful professional careers.
                                     </p>
-                                    <p className="font-semibold text-gray-800 border-l-4 border-brand-green pl-4 italic mt-6">
+                                    <p className="font-semibold text-gray-800 border-l-4 border-emerald-500 pl-4 italic mt-4 mb-4">
                                         "Education should not only provide degrees but should also build confidence, competence, and employability for every student."
                                     </p>
                                 </div>
 
                                 <button
                                     onClick={() => setShowFullAyyanna(!showFullAyyanna)}
-                                    className="relative z-10 text-brand-green font-bold flex items-center gap-1 hover:text-green-700 transition mt-4 pt-2 w-max"
+                                    className="text-blue-500 font-bold flex items-center gap-1 hover:text-blue-700 transition mt-2 mb-6"
                                 >
                                     {showFullAyyanna ? (
-                                        <>Read Less <ChevronUp className="w-5 h-5" /></>
+                                        <>Read Less <ChevronUp className="w-4 h-4" /></>
                                     ) : (
-                                        <>Read More <ChevronDown className="w-5 h-5" /></>
+                                        <>Read More <ChevronDown className="w-4 h-4" /></>
                                     )}
                                 </button>
+                            </div>
+
+                            <div className="flex items-center gap-3 mt-auto pt-6 border-t border-gray-100">
+                                <a href="tel:+918722282131" className="w-10 h-10 rounded-lg bg-blue-500 text-white flex items-center justify-center hover:bg-blue-600 transition shadow-sm">
+                                    <Phone className="w-5 h-5" />
+                                </a>
+                                <a href="mailto:gnanamyaedutech@gmail.com" className="w-10 h-10 rounded-lg bg-amber-500 text-white flex items-center justify-center hover:bg-amber-600 transition shadow-sm">
+                                    <Mail className="w-5 h-5" />
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    {/* Co-Founder */}
-                    <div className="flex flex-col lg:flex-row-reverse gap-12 items-start bg-gray-50 rounded-3xl p-8 sm:p-12 border border-blue-50 shadow-sm relative group">
-                        <div className="w-full lg:w-72 shrink-0">
-                            <div className="w-48 h-48 lg:w-full lg:h-72 mx-auto rounded-3xl border-8 border-white shadow-xl overflow-hidden group-hover:-translate-y-2 transition duration-500">
-                                <img src="/vaishnavi.jpg" className="w-full h-full object-cover object-top" alt="Vaishnavi Reddy G K" />
-                            </div>
+                    {/* Co-Founder Card */}
+                    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group">
+                        <div className="h-96 w-full overflow-hidden bg-blue-50/50 flex items-center justify-center">
+                            <img
+                                src="/vaishnavi.jpg"
+                                className="w-full h-full object-contain group-hover:scale-105 transition duration-500"
+                                alt="Vaishnavi Reddy G K"
+                            />
                         </div>
-                        <div className="flex-1 lg:text-right">
-                            <h3 className="text-3xl font-bold text-gray-900">Vaishnavi Reddy G K</h3>
-                            <div className="text-brand-green font-bold uppercase tracking-wider text-sm mt-2 flex flex-wrap lg:justify-end items-center gap-3">
-                                Co-founder & Director
-                                <span className="flex items-center gap-1.5 text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm border border-gray-100 normal-case tracking-normal">
-                                    <Phone className="w-3.5 h-3.5 text-brand-green" /> +91 7899637408
-                                </span>
-                            </div>
+                        <div className="p-8 flex-1 flex flex-col">
+                            <h3 className="text-2xl font-bold text-gray-900 font-serif">Vaishnavi Reddy G K</h3>
+                            <p className="text-blue-500 font-medium mt-1 mb-4">Co-founder & Director</p>
 
-                            <div className="mt-6 space-y-4 text-gray-600 text-sm md:text-base leading-relaxed lg:text-right">
+                            <div className="text-gray-600 text-sm leading-relaxed flex-1">
                                 <p>
                                     Vaishnavi Reddy G K is the Co-Founder of Gnanamaya Edutech and plays a key role in shaping the academic vision and training excellence of the organization. With a strong passion for teaching and mentoring, she is dedicated to empowering students through structured learning and practical knowledge.
                                 </p>
 
-                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullVaishnavi ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`space-y-4 transition-all duration-500 overflow-hidden ${showFullVaishnavi ? 'max-h-[1000px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                                     <p>
                                         She holds an MBA in Finance and Business Analytics, which has provided her with deep expertise in financial management, data interpretation, and strategic decision-making. Her specialization in Business Analytics enables her to guide students in understanding data-driven approaches and applying analytical thinking in real-world business scenarios.
                                     </p>
@@ -102,14 +115,23 @@ const Team = () => {
 
                                 <button
                                     onClick={() => setShowFullVaishnavi(!showFullVaishnavi)}
-                                    className="relative z-10 text-brand-green font-bold flex items-center gap-1 hover:text-green-700 transition mt-4 pt-2 lg:justify-end w-full"
+                                    className="text-blue-500 font-bold flex items-center gap-1 hover:text-blue-700 transition mt-2 mb-6"
                                 >
                                     {showFullVaishnavi ? (
-                                        <>Read Less <ChevronUp className="w-5 h-5" /></>
+                                        <>Read Less <ChevronUp className="w-4 h-4" /></>
                                     ) : (
-                                        <>Read More <ChevronDown className="w-5 h-5" /></>
+                                        <>Read More <ChevronDown className="w-4 h-4" /></>
                                     )}
                                 </button>
+                            </div>
+
+                            <div className="flex items-center gap-3 mt-auto pt-6 border-t border-gray-100">
+                                <a href="tel:+917899637408" className="w-10 h-10 rounded-lg bg-blue-500 text-white flex items-center justify-center hover:bg-blue-600 transition shadow-sm">
+                                    <Phone className="w-5 h-5" />
+                                </a>
+                                <a href="mailto:gnanamyaedutech@gmail.com" className="w-10 h-10 rounded-lg bg-amber-500 text-white flex items-center justify-center hover:bg-amber-600 transition shadow-sm">
+                                    <Mail className="w-5 h-5" />
+                                </a>
                             </div>
                         </div>
                     </div>

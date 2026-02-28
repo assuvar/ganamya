@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, Eye } from 'lucide-react';
+import { Map, Eye, ShieldCheck, Rocket, Award } from 'lucide-react';
 
 const About = () => {
     return (
@@ -35,6 +35,18 @@ const About = () => {
                 <h2 className="text-4xl font-extrabold mt-4 leading-snug">
                     Bridging the Gap Between <br /> Education & Employment
                 </h2>
+
+                <div className="mt-6 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-wider">
+                    <span className="flex items-center gap-2 text-white bg-gradient-to-r from-emerald-500 to-teal-600 px-4 py-2.5 rounded-xl shadow-md">
+                        <ShieldCheck className="w-5 h-5" /> MSME Registered
+                    </span>
+                    <span className="flex items-center gap-2 text-white bg-gradient-to-r from-blue-500 to-indigo-600 px-4 py-2.5 rounded-xl shadow-md">
+                        <Rocket className="w-5 h-5" /> Startup India
+                    </span>
+                    <span className="flex items-center gap-2 text-white bg-gradient-to-r from-orange-500 to-amber-600 px-4 py-2.5 rounded-xl shadow-md">
+                        <Award className="w-5 h-5" /> Industry Certified
+                    </span>
+                </div>
 
                 <div className="mt-10 space-y-8">
                     <div className="flex gap-4">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, Linkedin, MapPin, Phone, Mail, ShieldCheck, Rocket, Award } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -15,10 +15,12 @@ const Footer = () => {
                             Gnanamaya <span className="text-brand-green">Edutech</span>
                         </span>
                     </div>
-                    <p className="text-sm text-gray-400 leading-relaxed pr-8">
-                        Empowering learners with future-ready skills and practical knowledge that goes beyond textbooks.
-                    </p>
-                    <div className="flex space-x-5 pt-2">
+                    <div className="flex flex-wrap gap-3 pt-2">
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><ShieldCheck className="w-3.5 h-3.5" /> MSME Registered</span>
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><Rocket className="w-3.5 h-3.5" /> Startup India</span>
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-orange-500 to-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><Award className="w-3.5 h-3.5" /> Industry Certified</span>
+                    </div>
+                    <div className="flex space-x-5 pt-4">
                         <a href="https://www.instagram.com/gnanamaya_edutech_llp?igsh=MXA0NjB1Y3kybGgxZg==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-green hover:text-white transition">
                             <Instagram className="w-5 h-5" />
                         </a>

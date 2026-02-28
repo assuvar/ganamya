@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Partners from './components/Partners';
 import Programs from './components/Programs';
+import WhyChooseUs from './components/WhyChooseUs';
 import About from './components/About';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
@@ -20,6 +21,7 @@ const Home = () => (
     <Stats />
     <Partners />
     <Programs />
+    <WhyChooseUs />
     <About />
     <Features />
     <Testimonials />

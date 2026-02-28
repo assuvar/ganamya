@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, CheckCircle, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, CheckCircle, Send, ShieldCheck, Rocket, Award } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -48,36 +48,41 @@ const Contact = () => {
                     <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Get In Touch</span>
                     <h2 className="text-3xl font-bold mt-2">Contact Our Experts</h2>
 
-                    <div className="mt-12 space-y-8">
-                        <div className="flex gap-4">
-                            <MapPin className="text-brand-green w-5 h-5 shrink-0" />
-                            <div>
-                                <div className="font-bold text-sm">Headquarters</div>
-                                <p className="text-gray-500 text-sm">No 22, Vasanthappa Garden, HAL 2nd Stage, Doopanahalli, Indiranagar, Bangalore – 560008</p>
+                    <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
+                                <MapPin className="text-brand-green w-6 h-6" />
                             </div>
+                            <div className="font-bold text-sm mb-2">Headquarters</div>
+                            <p className="text-gray-500 text-sm">No 22, Vasanthappa Garden, HAL 2nd Stage, Doopanahalli, Indiranagar, Bangalore – 560008</p>
                         </div>
-                        <div className="flex gap-4">
-                            <Phone className="text-brand-green w-5 h-5 shrink-0" />
-                            <div>
-                                <div className="font-bold text-sm">Phone</div>
-                                <p className="text-gray-500 text-sm">+91 8722282131</p>
+                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
+                                <Phone className="text-brand-green w-6 h-6" />
                             </div>
+                            <div className="font-bold text-sm mb-2">Phone</div>
+                            <p className="text-gray-500 text-sm">+91 8722282131</p>
                         </div>
-                        <div className="flex gap-4">
-                            <Mail className="text-brand-green w-5 h-5 shrink-0" />
-                            <div>
-                                <div className="font-bold text-sm">Email</div>
-                                <p className="text-gray-500 text-sm">gnanamyaedutech@gmail.com</p>
+                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm md:col-span-2 lg:col-span-1">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
+                                <Mail className="text-brand-green w-6 h-6" />
                             </div>
+                            <div className="font-bold text-sm mb-2">Email</div>
+                            <p className="text-gray-500 text-sm">gnanamyaedutech@gmail.com</p>
                         </div>
                     </div>
 
+                    <div className="mt-8 flex flex-wrap gap-3">
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><ShieldCheck className="w-3.5 h-3.5" /> MSME Registered</span>
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><Rocket className="w-3.5 h-3.5" /> Startup India</span>
+                        <span className="flex items-center gap-1.5 bg-gradient-to-r from-orange-500 to-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm"><Award className="w-3.5 h-3.5" /> Industry Certified</span>
+                    </div>
 
                 </div>
 
                 <div className="bg-gray-50 p-8 rounded-2xl shadow-inner">
                     <form className="space-y-4">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label className="text-xs font-bold text-gray-400 uppercase">Full Name</label>
                                 <input
@@ -114,7 +119,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label className="text-xs font-bold text-gray-400 uppercase">Number of Students</label>
                                 <input
