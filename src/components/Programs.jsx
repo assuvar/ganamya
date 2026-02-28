@@ -275,7 +275,7 @@ const Programs = () => {
 
     return (
         <>
-            <section id="courses" className="py-20 bg-gray-50">
+            <section id="courses" className="py-20 bg-brand-light">
                 <div className="max-w-screen-2xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-10">
                         <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Our Programs</span>
@@ -283,7 +283,7 @@ const Programs = () => {
                     </div>
 
                     {/* Running Course List / Marquee */}
-                    <div className="relative flex overflow-x-hidden mb-12 sm:mb-16 bg-white py-4 border-y border-gray-100 shadow-sm w-screen -ml-4 sm:-ml-8 lg:-ml-[calc((100vw-100%)/2)] shadow-inner">
+                    <div className="relative flex overflow-x-hidden mb-12 sm:mb-16 bg-white py-4 border-y border-brand-navy/10 shadow-sm w-screen -ml-4 sm:-ml-8 lg:-ml-[calc((100vw-100%)/2)] shadow-inner">
                         <div className="animate-marquee whitespace-nowrap flex items-center w-max hover:[animation-play-state:paused]">
                             {[...programs, ...programs].map((program, index) => (
                                 <span
@@ -303,7 +303,7 @@ const Programs = () => {
                             <button
                                 key={level}
                                 onClick={() => handleFilterChange(level)}
-                                className={`px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${filter === level ? 'bg-brand-green text-white shadow-md shadow-brand-green/30 scale-105' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 hover:scale-105'}`}
+                                className={`px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${filter === level ? 'bg-brand-green text-white shadow-md shadow-brand-green/30 scale-105' : 'bg-white text-brand-navy/70 hover:bg-gray-100 border border-brand-navy/20 hover:scale-105'}`}
                             >
                                 {level === 'All' ? 'All Programs' : level}
                             </button>
@@ -312,14 +312,14 @@ const Programs = () => {
 
                     <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 transition-all">
                         {filteredPrograms.slice(0, visibleCount).map((program, index) => (
-                            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col group">
+                            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md border border-brand-navy/10 flex flex-col group">
                                 <div className="relative overflow-hidden shrink-0">
                                     <img src={program.image} className="h-44 w-full object-cover group-hover:scale-105 transition duration-500" alt={program.title} />
                                 </div>
                                 <div className="p-6 flex flex-col flex-1">
                                     <h3 className="font-bold text-lg leading-snug">{program.title}</h3>
-                                    <p className="text-gray-500 text-sm mt-3 flex-1">{program.description}</p>
-                                    <div className="mt-5 flex items-center justify-between text-xs text-gray-400 font-bold border-t border-gray-100 pt-5">
+                                    <p className="text-brand-navy/60 text-sm mt-3 flex-1">{program.description}</p>
+                                    <div className="mt-5 flex items-center justify-between text-xs text-brand-navy/50 font-bold border-t border-brand-navy/10 pt-5">
                                         <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-brand-green" /> {program.duration}</span>
                                         <span className="flex items-center gap-1.5"><BarChart className="w-4 h-4 text-brand-green" /> {program.level}</span>
                                     </div>
@@ -347,7 +347,7 @@ const Programs = () => {
                             {visibleCount > 8 && (
                                 <button
                                     onClick={handleShowLess}
-                                    className="bg-white text-gray-600 border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition shadow-sm w-full sm:w-auto"
+                                    className="bg-white text-brand-navy/70 border border-brand-navy/20 px-8 py-3 rounded-xl font-bold hover:bg-brand-light transition shadow-sm w-full sm:w-auto"
                                 >
                                     Show Less
                                 </button>

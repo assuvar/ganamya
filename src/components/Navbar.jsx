@@ -37,7 +37,7 @@ const Navbar = () => {
                     {/* Mobile Menu Toggle Button */}
                     <button
                         onClick={toggleMenu}
-                        className="lg:hidden p-2 text-gray-600 hover:text-brand-green transition focus:outline-none"
+                        className="lg:hidden p-2 text-brand-navy/70 hover:text-brand-green transition focus:outline-none"
                     >
                         {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
             {/* Mobile Dropdown Menu */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg py-4 px-8 flex flex-col space-y-4">
+                <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-brand-navy/10 shadow-lg py-4 px-8 flex flex-col space-y-4">
                     <a href="#" onClick={toggleMenu} className="text-gray-700 hover:text-brand-green font-medium transition">Home</a>
                     <a href="#about" onClick={toggleMenu} className="text-gray-700 hover:text-brand-green font-medium transition">About</a>
                     <a href="#courses" onClick={toggleMenu} className="text-gray-700 hover:text-brand-green font-medium transition">Courses</a>

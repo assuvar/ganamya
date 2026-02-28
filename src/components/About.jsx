@@ -14,14 +14,14 @@ const About = () => {
                         />
                         <div className="mt-4 text-center">
                             <div className="text-2xl font-bold text-brand-green">100%</div>
-                            <div className="text-xs text-gray-400 font-bold uppercase">Industry Focus</div>
+                            <div className="text-xs text-brand-navy/50 font-bold uppercase">Industry Focus</div>
                         </div>
                     </div>
                 </div>
                 <div className="space-y-4 pt-12">
                     <div className="bg-blue-50 p-4 rounded-xl text-center">
                         <div className="text-lg font-bold">24/7</div>
-                        <div className="text-xs text-gray-400">Student Support</div>
+                        <div className="text-xs text-brand-navy/50">Student Support</div>
                     </div>
                     <img
                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=300&q=80"
@@ -55,7 +55,7 @@ const About = () => {
                         </div>
                         <div>
                             <h4 className="font-bold text-lg">Our Mission</h4>
-                            <p className="text-gray-500 text-sm mt-1">
+                            <p className="text-brand-navy/60 text-sm mt-1">
                                 To bridge the gap between education and employment by delivering hands-on, industry-oriented training and continuous mentorship.
                             </p>
                         </div>
@@ -66,7 +66,7 @@ const About = () => {
                         </div>
                         <div>
                             <h4 className="font-bold text-lg">Our Vision</h4>
-                            <p className="text-gray-500 text-sm mt-1">
+                            <p className="text-brand-navy/60 text-sm mt-1">
                                 To empower learners with future-ready skills and practical knowledge that goes beyond textbooks. To create confident, industry-ready professionals who can adapt, innovate, and succeed in the modern digital world.
                             </p>
                         </div>

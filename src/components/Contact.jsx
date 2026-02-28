@@ -49,26 +49,26 @@ const Contact = () => {
                     <h2 className="text-3xl font-bold mt-2">Contact Our Experts</h2>
 
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">
+                        <div className="flex flex-col items-center text-center p-6 bg-brand-light rounded-2xl border border-brand-navy/10 shadow-sm">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
                                 <MapPin className="text-brand-green w-6 h-6" />
                             </div>
                             <div className="font-bold text-sm mb-2">Headquarters</div>
-                            <p className="text-gray-500 text-sm">No 22, Vasanthappa Garden, HAL 2nd Stage, Doopanahalli, Indiranagar, Bangalore – 560008</p>
+                            <p className="text-brand-navy/60 text-sm">No 22, Vasanthappa Garden, HAL 2nd Stage, Doopanahalli, Indiranagar, Bangalore – 560008</p>
                         </div>
-                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">
+                        <div className="flex flex-col items-center text-center p-6 bg-brand-light rounded-2xl border border-brand-navy/10 shadow-sm">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
                                 <Phone className="text-brand-green w-6 h-6" />
                             </div>
                             <div className="font-bold text-sm mb-2">Phone</div>
-                            <p className="text-gray-500 text-sm">+91 8722282131</p>
+                            <p className="text-brand-navy/60 text-sm">+91 8722282131</p>
                         </div>
-                        <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm md:col-span-2 lg:col-span-1">
+                        <div className="flex flex-col items-center text-center p-6 bg-brand-light rounded-2xl border border-brand-navy/10 shadow-sm md:col-span-2 lg:col-span-1">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
                                 <Mail className="text-brand-green w-6 h-6" />
                             </div>
                             <div className="font-bold text-sm mb-2">Email</div>
-                            <p className="text-gray-500 text-sm">gnanamyaedutech@gmail.com</p>
+                            <p className="text-brand-navy/60 text-sm">gnanamyaedutech@gmail.com</p>
                         </div>
                     </div>
 
@@ -80,64 +80,64 @@ const Contact = () => {
 
                 </div>
 
-                <div className="bg-gray-50 p-8 rounded-2xl shadow-inner">
+                <div className="bg-brand-light p-8 rounded-2xl shadow-inner">
                     <form className="space-y-4">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label className="text-xs font-bold text-gray-400 uppercase">Full Name</label>
+                                <label className="text-xs font-bold text-brand-navy/50 uppercase">Full Name</label>
                                 <input
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
                                     type="text"
                                     placeholder="John Doe"
-                                    className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none"
+                                    className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none"
                                 />
                             </div>
                             <div>
-                                <label className="text-xs font-bold text-gray-400 uppercase">Phone Number</label>
+                                <label className="text-xs font-bold text-brand-navy/50 uppercase">Phone Number</label>
                                 <input
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
                                     type="text"
                                     placeholder="+91 00000 00000"
-                                    className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none"
+                                    className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none"
                                 />
                             </div>
                         </div>
 
                         <div>
-                            <label className="text-xs font-bold text-gray-400 uppercase">College / Company Name <span className="text-gray-300">(Optional)</span></label>
+                            <label className="text-xs font-bold text-brand-navy/50 uppercase">College / Company Name <span className="text-gray-300">(Optional)</span></label>
                             <input
                                 name="college"
                                 value={formData.college}
                                 onChange={handleChange}
                                 type="text"
                                 placeholder="E.g., Bangalore Institute of Technology"
-                                className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white"
+                                className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white"
                             />
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label className="text-xs font-bold text-gray-400 uppercase">Number of Students</label>
+                                <label className="text-xs font-bold text-brand-navy/50 uppercase">Number of Students</label>
                                 <input
                                     name="students"
                                     value={formData.students}
                                     onChange={handleChange}
                                     type="number"
                                     placeholder="e.g., 50"
-                                    className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none"
+                                    className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none"
                                 />
                             </div>
                             <div>
-                                <label className="text-xs font-bold text-gray-400 uppercase">Need Quotation?</label>
+                                <label className="text-xs font-bold text-brand-navy/50 uppercase">Need Quotation?</label>
                                 <select
                                     name="quotation"
                                     value={formData.quotation}
                                     onChange={handleChange}
-                                    className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white">
+                                    className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white">
                                     <option value="">Select</option>
                                     <option value="Yes">Yes, Please Provide</option>
                                     <option value="No">No, Just Inquiry</option>
@@ -146,12 +146,12 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <label className="text-xs font-bold text-gray-400 uppercase">Interested Course</label>
+                            <label className="text-xs font-bold text-brand-navy/50 uppercase">Interested Course</label>
                             <select
                                 name="course"
                                 value={formData.course}
                                 onChange={handleChange}
-                                className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white">
+                                className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none bg-white">
                                 <option value="">Select a course</option>
                                 {coursesList.map((c, i) => (
                                     <option key={i} value={c}>{c}</option>
@@ -159,14 +159,14 @@ const Contact = () => {
                             </select>
                         </div>
                         <div>
-                            <label className="text-xs font-bold text-gray-400 uppercase">Message</label>
+                            <label className="text-xs font-bold text-brand-navy/50 uppercase">Message</label>
                             <textarea
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
                                 rows={3}
                                 placeholder="How can we help you?"
-                                className="w-full mt-1 p-3 rounded-lg border border-gray-200 text-sm focus:ring-2 focus:ring-brand-green outline-none"
+                                className="w-full mt-1 p-3 rounded-lg border border-brand-navy/20 text-sm focus:ring-2 focus:ring-brand-green outline-none"
                             ></textarea>
                         </div>
                         <button

@@ -36,7 +36,7 @@ const Features = () => {
     ];
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-brand-light">
             <div className="max-w-7xl mx-auto px-8">
                 <div className="text-center mb-16">
                     <span className="text-brand-green text-xs font-bold uppercase tracking-widest">Why Choose Us</span>
@@ -44,10 +44,10 @@ const Features = () => {
                 </div>
                 <div className="grid md:grid-cols-3 gap-6">
                     {features.map((feature, index) => (
-                        <div key={index} className="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                        <div key={index} className="bg-white p-8 rounded-xl border border-brand-navy/10 hover:shadow-lg transition">
                             {feature.icon}
                             <h4 className="font-bold text-lg">{feature.title}</h4>
-                            <p className="text-gray-500 text-sm mt-2">{feature.description}</p>
+                            <p className="text-brand-navy/60 text-sm mt-2">{feature.description}</p>
                         </div>
                     ))}
                 </div>

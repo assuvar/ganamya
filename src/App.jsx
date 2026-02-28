@@ -35,7 +35,7 @@ const Home = () => (
 function App() {
   return (
     <Router>
-      <div className="bg-white text-gray-800 font-sans min-h-screen">
+      <div className="bg-white text-brand-navy/90 font-sans min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

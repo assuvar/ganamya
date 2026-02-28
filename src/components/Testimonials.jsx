@@ -32,14 +32,14 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="bg-green-50 p-8 rounded-2xl relative">
                         <div className="flex text-yellow-400 mb-4">★★★★★</div>
-                        <p className="text-gray-600 italic text-sm leading-relaxed">"{testimonial.quote}"</p>
+                        <p className="text-brand-navy/70 italic text-sm leading-relaxed">"{testimonial.quote}"</p>
                         <div className="mt-8 flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
                                 <img src={testimonial.avatar} alt={testimonial.name} />
                             </div>
                             <div>
                                 <div className="font-bold text-sm">{testimonial.name}</div>
-                                <div className="text-xs text-gray-400">{testimonial.role}</div>
+                                <div className="text-xs text-brand-navy/50">{testimonial.role}</div>
                             </div>
                         </div>
                     </div>
