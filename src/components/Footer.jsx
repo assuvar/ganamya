@@ -64,14 +64,14 @@ const Footer = () => {
             </div>
 
             {/* Copyright & Credits */}
-            <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 flex justify-between items-end gap-6 text-xs text-gray-500 font-medium pb-4 relative">
+            <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center md:items-end gap-10 md:gap-6 text-xs text-gray-500 font-medium pb-4 relative">
 
-                <p>© {new Date().getFullYear()} Gnanamaya Edutech LLP. All Rights Reserved.</p>
+                <p className="order-2 md:order-1 text-center md:text-left">© {new Date().getFullYear()} Gnanamaya Edutech LLP. All Rights Reserved.</p>
 
                 {/* Developer Credit - Centered */}
-                <div className="absolute left-1/2 -translate-x-1/2 bottom-0 flex flex-col items-center">
-                    <p className="mb-2">This website is maintained and powered by</p>
-                    <a href="https://assuvar.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 group hover:opacity-80 transition py-2 px-4 bg-[#1f2937] border border-gray-700 rounded-lg">
+                <div className="order-1 md:order-2 flex flex-col items-center md:absolute md:left-1/2 md:-translate-x-1/2 md:bottom-0">
+                    <p className="mb-2 text-center">This website is maintained and powered by</p>
+                    <a href="https://assuvar.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 group hover:opacity-80 transition py-2 px-4 bg-[#1f2937] border border-gray-700 rounded-lg whitespace-nowrap">
                         <div className="bg-white p-1 rounded-md">
                             <img src="/assuvar-logo.png" alt="Assuvar Logo" className="h-4 sm:h-5 object-contain" />
                         </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <div className="flex gap-6 z-10">
+                <div className="order-3 flex gap-6 z-10">
                     <a href="#" className="hover:text-brand-green transition">Privacy Policy</a>
                     <a href="#" className="hover:text-brand-green transition">Terms of Service</a>
                 </div>
