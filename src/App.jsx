@@ -14,6 +14,7 @@ import Values from './components/Values';
 import Contact from './components/Contact';
 import InstagramFeed from './components/InstagramFeed';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const Home = () => (
   <>
@@ -35,7 +36,7 @@ const Home = () => (
 function App() {
   return (
     <Router>
-      <div className="bg-white text-brand-navy/90 font-sans min-h-screen">
+      <div className="bg-white text-brand-navy/90 font-sans min-h-screen relative">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,6 +46,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <FloatingWhatsApp />
         <Footer />
       </div>
     </Router>

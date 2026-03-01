@@ -15,7 +15,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Advanced',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Data modeling', 'Power Query', 'Visualizations', 'Dashboard publishing', 'Analytics AI features'] }
+                { title: 'Module 1: Getting Started with Power BI', hours: 5, topics: ['Introduction to BI', 'Power BI Interface', 'Connecting to Data Sources'] },
+                { title: 'Module 2: Data Transformation', hours: 6, topics: ['Power Query Editor', 'Cleaning Data', 'Merging & Appending Queries'] },
+                { title: 'Module 3: Data Modeling & DAX', hours: 8, topics: ['Creating Relationships', 'Introduction to DAX', 'Calculated Columns & Measures'] },
+                { title: 'Module 4: Data Visualization', hours: 6, topics: ['Creating Charts & Graphs', 'Formatting Visuals', 'Interactive Dashboards'] },
+                { title: 'Module 5: Publishing & Sharing', hours: 5, topics: ['Power BI Service', 'Publishing Reports', 'Workspaces & Apps'] }
             ]
         },
         {
@@ -25,7 +29,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Advanced',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Advanced formulas', 'Pivot tables', 'VBA intro', 'Data modeling', 'Financial dashboards'] }
+                { title: 'Module 1: Advanced Functions', hours: 6, topics: ['Logical Functions', 'Lookup Functions (VLOOKUP, XLOOKUP)', 'Text Functions'] },
+                { title: 'Module 2: Data Analysis Tools', hours: 6, topics: ['Pivot Tables & Charts', 'What-If Analysis', 'Goal Seek & Solver'] },
+                { title: 'Module 3: Data Validation & Formatting', hours: 5, topics: ['Advanced Conditional Formatting', 'Custom Data Validation', 'Protecting Sheets'] },
+                { title: 'Module 4: Dashboard Creation', hours: 7, topics: ['Designing Dashboards', 'Interactive Form Controls', 'Slicers & Timelines'] },
+                { title: 'Module 5: Introduction to Macros & VBA', hours: 6, topics: ['Recording Macros', 'VBA Editor Basics', 'Automating Tasks'] }
             ]
         },
         {
@@ -35,7 +43,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Intermediate',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Python basics', 'Pandas & NumPy', 'Data visualization', 'Statistical analysis', 'Machine learning intro', 'Capstone project'] }
+                { title: 'Module 1: Python Basics for Data', hours: 5, topics: ['Python Syntax', 'Data Types & Structures', 'Control Flow'] },
+                { title: 'Module 2: NumPy & Pandas', hours: 8, topics: ['NumPy Arrays', 'Pandas DataFrames', 'Data Cleaning & Manipulation'] },
+                { title: 'Module 3: Data Visualization', hours: 6, topics: ['Matplotlib Basics', 'Seaborn for Statistical Plots', 'Customizing Visuals'] },
+                { title: 'Module 4: Statistical Analysis', hours: 5, topics: ['Descriptive Statistics', 'Probability distributions', 'Hypothesis Testing'] },
+                { title: 'Module 5: Intro to Machine Learning', hours: 6, topics: ['Scikit-learn Basics', 'Linear Regression', 'Classification Basics'] }
             ]
         },
         {
@@ -45,7 +57,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Beginner',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['SEO', 'SEM', 'Social media marketing', 'Email marketing', 'Analytics & reporting', 'Marketing project'] }
+                { title: 'Module 1: Digital Marketing Fundamentals', hours: 5, topics: ['Marketing Principles', 'Customer Journey', 'Digital Channels Overview'] },
+                { title: 'Module 2: SEO & Content Marketing', hours: 7, topics: ['On-page & Off-page SEO', 'Keyword Research', 'Content Strategy'] },
+                { title: 'Module 3: Social Media Marketing', hours: 6, topics: ['Platform Strategies (FB, IG, LinkedIn)', 'Community Management', 'Paid Social Campaigns'] },
+                { title: 'Module 4: Search Engine Marketing (SEM)', hours: 6, topics: ['Google Ads Network', 'PPC Campaigns', 'Ad Copywriting & Bidding'] },
+                { title: 'Module 5: Analytics & Email Marketing', hours: 6, topics: ['Google Analytics 4', 'Email Automation', 'Measuring ROI'] }
             ]
         },
         {
@@ -55,7 +71,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Intermediate',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['SQL queries', 'Database design', 'Joins & optimization', 'NoSQL basics', 'E-commerce database project'] }
+                { title: 'Module 1: Database Concepts', hours: 5, topics: ['Relational Data Models', 'ER Diagrams', 'Normalization'] },
+                { title: 'Module 2: SQL Fundamentals', hours: 6, topics: ['SELECT statements', 'Filtering & Sorting Data', 'Data Types'] },
+                { title: 'Module 3: Advanced SQL Queries', hours: 8, topics: ['Joins (Inner, Left, Right)', 'Subqueries', 'Aggregate Functions & GROUP BY'] },
+                { title: 'Module 4: Database Administration', hours: 6, topics: ['Creating & Altering Tables', 'Indexes', 'Views & Triggers'] },
+                { title: 'Module 5: NoSQL & Industry Standards', hours: 5, topics: ['Introduction to NoSQL', 'MongoDB Basics', 'Database Security'] }
             ]
         },
         {
@@ -65,7 +85,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Advanced',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Predictive models', 'Regression analysis', 'Time series forecasting', 'Classification models'] }
+                { title: 'Module 1: Introduction to R & RStudio', hours: 5, topics: ['R Syntax & Data Types', 'Data Import/Export', 'Dplyr package'] },
+                { title: 'Module 2: Exploratory Data Analysis (EDA)', hours: 6, topics: ['Summary Statistics', 'Data Visualization with ggplot2', 'Handling Missing Values'] },
+                { title: 'Module 3: Linear & Logistic Regression', hours: 7, topics: ['Simple & Multiple Regression', 'Model Assumptions', 'Binary Classification'] },
+                { title: 'Module 4: Advanced Predictive Models', hours: 6, topics: ['Decision Trees', 'Random Forests', 'Model Evaluation & Tuning'] },
+                { title: 'Module 5: Time Series Forecasting', hours: 6, topics: ['Time Series Objects', 'ARIMA Models', 'Forecasting Principles'] }
             ]
         },
         {
@@ -75,7 +99,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Intermediate',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Business analytics foundations', 'Predictive analytics', 'Data interpretation', 'Visualization', 'Forecasting project'] }
+                { title: 'Module 1: Business Analytics Fundamentals', hours: 5, topics: ['Role of a Business Analyst', 'Metrics & KPIs', 'Data-Driven Decision Making'] },
+                { title: 'Module 2: Descriptive & Diagnostic Analytics', hours: 6, topics: ['Data Summarization', 'Root Cause Analysis', 'Performance Dashboards'] },
+                { title: 'Module 3: Predictive & Prescriptive Analytics', hours: 7, topics: ['Forecasting Techniques', 'Optimization Models', 'Simulation Basics'] },
+                { title: 'Module 4: Data Storytelling & Visualization', hours: 6, topics: ['Visual Best Practices', 'Communicating Insights', 'Presentation Skills'] },
+                { title: 'Module 5: Capstone Project', hours: 6, topics: ['Problem Framing', 'End-to-End Analysis', 'Executive Reporting'] }
             ]
         },
         {
@@ -85,7 +113,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Intermediate',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Tableau basics', 'Data blending', 'Dashboard design', 'Advanced analytics', 'Customer segmentation project'] }
+                { title: 'Module 1: Tableau Fundamentals', hours: 5, topics: ['Tableau Workspace', 'Connecting to Data', 'Basic Charts (Bar, Line, Pie)'] },
+                { title: 'Module 2: Data Manipulation & Blending', hours: 6, topics: ['Joins vs. Blends', 'Calculated Fields', 'Parameters & Sets'] },
+                { title: 'Module 3: Advanced Visualizations', hours: 7, topics: ['Dual Axis Charts', 'Heat Maps', 'Geographic Mapping'] },
+                { title: 'Module 4: Interactive Dashboards & Stories', hours: 6, topics: ['Dashboard Layouts', 'Dashboard Actions (Filters, Highlights)', 'Storytelling in Tableau'] },
+                { title: 'Module 5: Tableau Server & Online', hours: 6, topics: ['Publishing Dashboards', 'Data Extracts vs. Live', 'User Permissions'] }
             ]
         },
         {
@@ -95,7 +127,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Beginner',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Programming basics', 'Data structures', 'Visualization', 'Mini projects'] }
+                { title: 'Module 1: Core Programming Concepts', hours: 6, topics: ['Variables & Types', 'Loops & Conditions', 'Functions (R & Python)'] },
+                { title: 'Module 2: Data Structures', hours: 6, topics: ['Python Lists/Dicts', 'R Vectors/Lists', 'Working with Strings'] },
+                { title: 'Module 3: Data Import & Manipulation', hours: 7, topics: ['Pandas in Python', 'Dplyr in R', 'Reading CSV/Excel files'] },
+                { title: 'Module 4: Beginner Data Visualization', hours: 6, topics: ['Matplotlib Basics', 'Base R Graphics', 'Creating Simple Plots'] },
+                { title: 'Module 5: Mini Coding Projects', hours: 5, topics: ['Data Cleaning Project', 'Basic Analysis Project', 'Comparing R & Python'] }
             ]
         },
         {
@@ -105,7 +141,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'Beginner',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Data warehouse', 'Big data ecosystem', 'Visualization tools', 'Reporting systems'] }
+                { title: 'Module 1: Big Data Ecosystem', hours: 5, topics: ['V\'s of Big Data', 'Hadoop Basics', 'Cloud Computing Overview'] },
+                { title: 'Module 2: Data Warehousing', hours: 6, topics: ['ETL Processes', 'Data Marts vs Data Lakes', 'Star & Snowflake Schemas'] },
+                { title: 'Module 3: BI Tools & Reporting', hours: 7, topics: ['Evaluating BI Tools', 'Designing Enterprise Reports', 'Self-Service BI'] },
+                { title: 'Module 4: Modern Data Architecture', hours: 6, topics: ['Data Pipelines', 'Real-time Analytics', 'Data Governance'] },
+                { title: 'Module 5: Case Studies', hours: 6, topics: ['Retail Big Data use case', 'Financial Services Analytics', 'Healthcare Data'] }
             ]
         },
         {
@@ -115,7 +155,11 @@ const Programs = () => {
             duration: '30 Hours',
             level: 'All Levels',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 30, topics: ['Communication skills', 'Leadership', 'Interview preparation', 'Professional etiquette'] }
+                { title: 'Module 1: Effective Communication', hours: 6, topics: ['Verbal & Non-verbal Communication', 'Active Listening', 'Public Speaking basics'] },
+                { title: 'Module 2: Professional Etiquette', hours: 5, topics: ['Email Etiquette', 'Meeting Conduct', 'Time Management'] },
+                { title: 'Module 3: Teamwork & Leadership', hours: 7, topics: ['Conflict Resolution', 'Emotional Intelligence', 'Leading Small Teams'] },
+                { title: 'Module 4: Interview Preparation', hours: 6, topics: ['Resume Building', 'Mock Interviews', 'Salary Negotiation'] },
+                { title: 'Module 5: Critical Thinking & Problem Solving', hours: 6, topics: ['Analytical Thinking', 'Decision Making Frameworks', 'Creative Problem Solving'] }
             ]
         },
         {
@@ -125,7 +169,11 @@ const Programs = () => {
             duration: '20 Hours',
             level: 'Beginner',
             modules: [
-                { title: 'Curriculum Breakdown', hours: 20, topics: ['Excel basics', 'Formatting', 'Charts', 'Data tools', 'Budget tracker project'] }
+                { title: 'Module 1: Excel Essentials', hours: 4, topics: ['Navigating the Ribbon', 'Entering Data', 'Basic Formatting'] },
+                { title: 'Module 2: Fundamental Formulas', hours: 4, topics: ['SUM, AVERAGE, MIN, MAX', 'Relative vs Absolute References', 'Basic IF statements'] },
+                { title: 'Module 3: Data Organization', hours: 4, topics: ['Sorting & Filtering', 'Finding & Replacing', 'Freezing Panes'] },
+                { title: 'Module 4: Working with Charts', hours: 4, topics: ['Creating Column & Pie Charts', 'Formatting Chart Elements', 'Sparklines'] },
+                { title: 'Module 5: Practical Applications', hours: 4, topics: ['Personal Budget Tracker', 'Basic Inventory List', 'Printing & Sharing'] }
             ]
         },
         {
